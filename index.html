@@ -63,17 +63,20 @@
             margin-bottom: 28px;
         }
         .output-box {
-            min-height: 90px;
+            min-height: 100px;
             background-color: #ede8df;
             border-radius: 8px;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 18px;
             font-size: 15px;
             line-height: 1.5;
             color: #14321e;
             text-align: left;
+        }
+        .exercise-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
         }
     </style>
 </head>
@@ -110,64 +113,64 @@ function zeigeUebung() {
     switch (gefuehl) {
         case "verärgert":
             const uebungenVeraergert = [
-                "<b>Isometric Push:</b> Drücke mit beiden Handflächen für 10s so fest wie möglich gegen eine Wand. 3x wiederholen.",
-                "<b>Wut-Stampfen:</b> Stampfe 5x kräftig mit den Füßen auf den Boden und atme dabei geräuschvoll durch den Mund aus."
+                "<span class='exercise-title'>Isometric Push</span>Drücke mit beiden Handflächen für 10s so fest wie möglich gegen eine Wand. 3x wiederholen.",
+                "<span class='exercise-title'>Wut-Stampfen</span>Stampfe 5x kräftig mit den Füßen auf den Boden und atme dabei geräuschvoll durch den Mund aus."
             ];
             uebung = uebungenVeraergert[zufall];
             break;
 
         case "lustlos":
             const uebungenLustlos = [
-                "<b>2-Minuten-Aktivierung:</b> Mache 10 zügige Hampelmänner, um den Kreislauf schnell in Schwung zu bringen.",
-                "<b>Über-Kreuz-Tappen:</b> Tippe im Stehen abwechselnd mit der rechten Hand auf das linke Knie und umgekehrt. 15x."
+                "<span class='exercise-title'>2-Minuten-Aktivierung</span>Mache 10 zügige Hampelmänner, um den Kreislauf schnell in Schwung zu bringen.",
+                "<span class='exercise-title'>Über-Kreuz-Tappen</span>Tippe im Stehen abwechselnd mit der rechten Hand auf das linke Knie und umgekehrt. 15x."
             ];
             uebung = uebungenLustlos[zufall];
             break;
 
         case "ängstlich":
             const uebungenAengstlich = [
-                "<b>Physiologischer Seufzer:</b> Atme 2x kurz nacheinander durch die Nase ein, dann lange und langsam aus.",
-                "<b>Hand-Press:</b> Presse die Handflächen vor der Brust fest zusammen, halte 5s und lasse langsam nach."
+                "<span class='exercise-title'>Physiologischer Seufzer</span>Atme 2x kurz nacheinander durch die Nase ein, dann lange und langsam aus.",
+                "<span class='exercise-title'>Hand-Press</span>Presse die Handflächen vor der Brust fest zusammen, halte 5s und lasse langsam nach."
             ];
             uebung = uebungenAengstlich[zufall];
             break;
 
         case "gestresst":
             const uebungenGestresst = [
-                "<b>Progressive Muskelentspannung:</b> Balle deine Hände 5s fest zu Fäusten, öffne sie dann schlagartig. 3x.",
-                "<b>Box-Atmung:</b> 4s einatmen, 4s halten, 4s ausatmen, 4s halten. 3x wiederholen."
+                "<span class='exercise-title'>Progressive Muskelentspannung</span>Balle deine Hände 5s fest zu Fäusten, öffne sie dann schlagartig. 3x.",
+                "<span class='exercise-title'>Box-Atmung</span>4s einatmen, 4s halten, 4s ausatmen, 4s halten. 3x wiederholen."
             ];
             uebung = uebungenGestresst[zufall];
             break;
 
         case "unruhig":
             const uebungenUnruhig = [
-                "<b>5-4-3-2-1 Orientierung:</b> Benenne gedanklich 5 Dinge im Raum, 4 Geräusche, 3 Tastsensationen, 2 Gerüche, 1 Geschmack.",
-                "<b>Ausschütteln:</b> Schüttele deine Hände, Arme und Beine 20s lang kräftig aus."
+                "<span class='exercise-title'>5-4-3-2-1 Orientierung</span>Benenne gedanklich 5 Dinge im Raum, 4 Geräusche, 3 Tastsensationen, 2 Gerüche, 1 Geschmack.",
+                "<span class='exercise-title'>Ausschütteln</span>Schüttele deine Hände, Arme und Beine 20s lang kräftig aus."
             ];
             uebung = uebungenUnruhig[zufall];
             break;
 
         case "schlaflos":
             const uebungenSchlaflos = [
-                "<b>Wörter-Shuffle:</b> Stell dir ein Wort vor (z. B. 'SCHLAF') und finde zu jedem Buchstaben 3 neutrale Begriffe.",
-                "<b>Bein-Wippen:</b> Leg dich flach hin, lass die Füße locker nach außen fallen und wippe 2min mit den Beinen."
+                "<span class='exercise-title'>Wörter-Shuffle</span>Stell dir ein Wort vor (z. B. 'SCHLAF') und finde zu jedem Buchstaben 3 neutrale Begriffe.",
+                "<span class='exercise-title'>Bein-Wippen</span>Leg dich flach hin, lass die Füße locker nach außen fallen und wippe 2min mit den Beinen."
             ];
             uebung = uebungenSchlaflos[zufall];
             break;
 
         case "mutlos":
             const uebungenMutlos = [
-                "<b>Power-Posing:</b> Stell dich 1min aufrecht hin, stemm die Hände in die Hüften, Brust raus und atme tief durch.",
-                "<b>Schulter-Squeeze:</b> Zieh die Schultern 5s fest zu den Ohren, halte den Atem und lasse sie beim Ausatmen schlagartig fallen. 3x."
+                "<span class='exercise-title'>Power-Posing</span>Stell dich 1min aufrecht hin, stemm die Hände in die Hüften, Brust raus und atme tief durch.",
+                "<span class='exercise-title'>Schulter-Squeeze</span>Zieh die Schultern 5s fest zu den Ohren, halte den Atem und lasse sie beim Ausatmen schlagartig fallen. 3x."
             ];
             uebung = uebungenMutlos[zufall];
             break;
 
         case "traurig":
             const uebungenTraurig = [
-                "<b>Selbst-Umarmung:</b> Kreuz beide Arme über der Brust, leg die Hände auf die Oberarme und streichle sanft.",
-                "<b>Thymus-Klopfen:</b> Reibe oder klopfe mit den Fingerspitzen 20s sanft kreisend über dein Brustbein."
+                "<span class='exercise-title'>Selbst-Umarmung</span>Kreuz beide Arme über der Brust, leg die Hände auf die Oberarme und streichle sanft.",
+                "<span class='exercise-title'>Thymus-Klopfen</span>Reibe oder klopfe mit den Fingerspitzen 20s sanft kreisend über dein Brustbein."
             ];
             uebung = uebungenTraurig[zufall];
             break;
