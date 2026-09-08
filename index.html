@@ -1,201 +1,185 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FÜHLOMAT © 2026 MS</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f5f2eb;
+            color: #14321e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: #faf8f5;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #e2ded4;
+        }
+        .header-title {
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #6b7280;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 22px;
+            color: #14321e;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        select {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #c8c3b8;
+            background-color: #ffffff;
+            color: #14321e;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            background-color: #14321e;
+            color: #ffffff;
+            border: none;
+            padding: 14px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 28px;
+        }
+        .output-box {
+            min-height: 90px;
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #14321e;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="de"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;FÜHLOMAT © 2026 MS&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>* { box-sizing: border-box; margin: 0; padding: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f5f2eb;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #14321e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #faf8f5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 8px 24px rgba(0,0,0,0.08);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 32px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 420px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #e2ded4;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.header-title {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 11px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 2px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #6b7280;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #14321e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>select {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #c8c3b8;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #14321e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #14321e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 14px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 28px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.output-box {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 90px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ede8df;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #14321e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header-title"&gt;F Ü H L O M A T © 2026 MS&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Wie fühlst du dich gerade?&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;select id="comboFeelings"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="verärgert"&gt;verärgert&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="lustlos"&gt;lustlos&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="ängstlich"&gt;ängstlich&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="gestresst"&gt;gestresst&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="unruhig"&gt;unruhig&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="schlaflos"&gt;schlaflos&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="mutlos"&gt;mutlos&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="traurig"&gt;traurig&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/select&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="zeigeUebung()"&gt;Los!&lt;/button&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="output-box" id="lblAusgabe"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Wähle ein Gefühl aus und klicke auf "Los!".</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">function zeigeUebung() {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const gefuehl = document.getElementById("comboFeelings").value;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const zufall = Math.floor(Math.random() * 2);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let uebung = "";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>switch (gefuehl) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "verärgert":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenVeraergert = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Isometric Push:&lt;/b&gt; Drücke mit beiden Handflächen für 10s so fest wie möglich gegen eine Wand. 3x wiederholen.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Wut-Stampfen:&lt;/b&gt; Stampfe 5x kräftig mit den Füßen auf den Boden und atme dabei geräuschvoll durch den Mund aus."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenVeraergert[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "lustlos":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenLustlos = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;2-Minuten-Aktivierung:&lt;/b&gt; Mache 10 zügige Hampelmänner, um den Kreislauf schnell in Schwung zu bringen.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Über-Kreuz-Tappen:&lt;/b&gt; Tippe im Stehen abwechselnd mit der rechten Hand auf das linke Knie und umgekehrt. 15x."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenLustlos[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "ängstlich":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenAengstlich = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Physiologischer Seufzer:&lt;/b&gt; Atme 2x kurz nacheinander durch die Nase ein, dann lange und langsam aus.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Hand-Press:&lt;/b&gt; Presse die Handflächen vor der Brust fest zusammen, halte 5s und lasse langsam nach."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenAengstlich[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "gestresst":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenGestresst = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Progressive Muskelentspannung:&lt;/b&gt; Balle deine Hände 5s fest zu Fäusten, öffne sie dann schlagartig. 3x.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Box-Atmung:&lt;/b&gt; 4s einatmen, 4s halten, 4s ausatmen, 4s halten. 3x wiederholen."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenGestresst[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "unruhig":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenUnruhig = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;5-4-3-2-1 Orientierung:&lt;/b&gt; Benenne gedanklich 5 Dinge im Raum, 4 Geräusche, 3 Tastsensationen, 2 Gerüche, 1 Geschmack.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Ausschütteln:&lt;/b&gt; Schüttele deine Hände, Arme und Beine 20s lang kräftig aus."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenUnruhig[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "schlaflos":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenSchlaflos = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Wörter-Shuffle:&lt;/b&gt; Stell dir ein Wort vor (z. B. 'SCHLAF') und finde zu jedem Buchstaben 3 neutrale Begriffe.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Bein-Wippen:&lt;/b&gt; Leg dich flach hin, lass die Füße locker nach außen fallen und wippe 2min mit den Beinen."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenSchlaflos[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "mutlos":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenMutlos = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Power-Posing:&lt;/b&gt; Stell dich 1min aufrecht hin, stemm die Hände in die Hüften, Brust raus und atme tief durch.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Schulter-Squeeze:&lt;/b&gt; Zieh die Schultern 5s fest zu den Ohren, halte den Atem und lasse sie beim Ausatmen schlagartig fallen. 3x."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenMutlos[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>case "traurig":</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const uebungenTraurig = [</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Selbst-Umarmung:&lt;/b&gt; Kreuz beide Arme über der Brust, leg die Hände auf die Oberarme und streichle sanft.",</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"&lt;b&gt;Thymus-Klopfen:&lt;/b&gt; Reibe oder klopfe mit den Fingerspitzen 20s sanft kreisend über dein Brustbein."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = uebungenTraurig[zufall];</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>default:</p>
-<p class="p1"><span class="Apple-converted-space">            </span>uebung = "Bitte wähle ein Gefühl aus.";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>break;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("lblAusgabe").innerHTML = uebung;</p>
-<p class="p1">}</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<div class="container">
+    <div class="header-title">F Ü H L O M A T © 2026 MS</div>
+    <h1>Wie fühlst du dich gerade?</h1>
+
+    <select id="comboFeelings">
+        <option value="verärgert">verärgert</option>
+        <option value="lustlos">lustlos</option>
+        <option value="ängstlich">ängstlich</option>
+        <option value="gestresst">gestresst</option>
+        <option value="unruhig">unruhig</option>
+        <option value="schlaflos">schlaflos</option>
+        <option value="mutlos">mutlos</option>
+        <option value="traurig">traurig</option>
+    </select>
+
+    <button onclick="zeigeUebung()">Los!</button>
+
+    <div class="output-box" id="lblAusgabe">
+        Wähle ein Gefühl aus und klicke auf "Los!".
+    </div>
+</div>
+
+<script>
+function zeigeUebung() {
+    const gefuehl = document.getElementById("comboFeelings").value;
+    const zufall = Math.floor(Math.random() * 2);
+    let uebung = "";
+
+    switch (gefuehl) {
+        case "verärgert":
+            const uebungenVeraergert = [
+                "<b>Isometric Push:</b> Drücke mit beiden Handflächen für 10s so fest wie möglich gegen eine Wand. 3x wiederholen.",
+                "<b>Wut-Stampfen:</b> Stampfe 5x kräftig mit den Füßen auf den Boden und atme dabei geräuschvoll durch den Mund aus."
+            ];
+            uebung = uebungenVeraergert[zufall];
+            break;
+
+        case "lustlos":
+            const uebungenLustlos = [
+                "<b>2-Minuten-Aktivierung:</b> Mache 10 zügige Hampelmänner, um den Kreislauf schnell in Schwung zu bringen.",
+                "<b>Über-Kreuz-Tappen:</b> Tippe im Stehen abwechselnd mit der rechten Hand auf das linke Knie und umgekehrt. 15x."
+            ];
+            uebung = uebungenLustlos[zufall];
+            break;
+
+        case "ängstlich":
+            const uebungenAengstlich = [
+                "<b>Physiologischer Seufzer:</b> Atme 2x kurz nacheinander durch die Nase ein, dann lange und langsam aus.",
+                "<b>Hand-Press:</b> Presse die Handflächen vor der Brust fest zusammen, halte 5s und lasse langsam nach."
+            ];
+            uebung = uebungenAengstlich[zufall];
+            break;
+
+        case "gestresst":
+            const uebungenGestresst = [
+                "<b>Progressive Muskelentspannung:</b> Balle deine Hände 5s fest zu Fäusten, öffne sie dann schlagartig. 3x.",
+                "<b>Box-Atmung:</b> 4s einatmen, 4s halten, 4s ausatmen, 4s halten. 3x wiederholen."
+            ];
+            uebung = uebungenGestresst[zufall];
+            break;
+
+        case "unruhig":
+            const uebungenUnruhig = [
+                "<b>5-4-3-2-1 Orientierung:</b> Benenne gedanklich 5 Dinge im Raum, 4 Geräusche, 3 Tastsensationen, 2 Gerüche, 1 Geschmack.",
+                "<b>Ausschütteln:</b> Schüttele deine Hände, Arme und Beine 20s lang kräftig aus."
+            ];
+            uebung = uebungenUnruhig[zufall];
+            break;
+
+        case "schlaflos":
+            const uebungenSchlaflos = [
+                "<b>Wörter-Shuffle:</b> Stell dir ein Wort vor (z. B. 'SCHLAF') und finde zu jedem Buchstaben 3 neutrale Begriffe.",
+                "<b>Bein-Wippen:</b> Leg dich flach hin, lass die Füße locker nach außen fallen und wippe 2min mit den Beinen."
+            ];
+            uebung = uebungenSchlaflos[zufall];
+            break;
+
+        case "mutlos":
+            const uebungenMutlos = [
+                "<b>Power-Posing:</b> Stell dich 1min aufrecht hin, stemm die Hände in die Hüften, Brust raus und atme tief durch.",
+                "<b>Schulter-Squeeze:</b> Zieh die Schultern 5s fest zu den Ohren, halte den Atem und lasse sie beim Ausatmen schlagartig fallen. 3x."
+            ];
+            uebung = uebungenMutlos[zufall];
+            break;
+
+        case "traurig":
+            const uebungenTraurig = [
+                "<b>Selbst-Umarmung:</b> Kreuz beide Arme über der Brust, leg die Hände auf die Oberarme und streichle sanft.",
+                "<b>Thymus-Klopfen:</b> Reibe oder klopfe mit den Fingerspitzen 20s sanft kreisend über dein Brustbein."
+            ];
+            uebung = uebungenTraurig[zufall];
+            break;
+
+        default:
+            uebung = "Bitte wähle ein Gefühl aus.";
+            break;
+    }
+
+    document.getElementById("lblAusgabe").innerHTML = uebung;
+}
+</script>
+
 </body>
 </html>
